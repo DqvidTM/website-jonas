@@ -1,8 +1,7 @@
-fetch("https://dcdn.dstn.to/profile/212265016160681984")
+fetch("https://dcdn.dstn.to/profile/137259014986792960")
   .then((response) => response.json())
   .then((data) => {
     var discordtext = document.getElementById("discordtext");
-
     discordtext.innerHTML =
       "<span class='h4 text-white whitney'>" +
       data.user.username +
@@ -15,7 +14,7 @@ fetch("https://dcdn.dstn.to/profile/212265016160681984")
       .addEventListener("click", copyToClickBoard);
     var buttoncopystandard = document.getElementById("buttoncopystandard");
     var buttoncopydiv = document.getElementById("buttoncopy");
-    var copyText = data.user.username + data.user.discriminator;
+    var copyText = data.user.username + "#" + data.user.discriminator;
 
     function copyToClickBoard() {
       navigator.clipboard
