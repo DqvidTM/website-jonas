@@ -1,4 +1,4 @@
-fetch("https://dcdn.dstn.to/profile/137259014986792960")
+fetch("https://dcdn.dstn.to/profile/212265016160681984")
   .then((response) => response.json())
   .then((data) => {
     var discordtext = document.getElementById("discordtext");
